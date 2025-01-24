@@ -4,7 +4,7 @@
 
 ### `npm start`
 
-### send http request to /play
+### send post request to /play
 
 ### mandatory params are `rows`, `difficultyLevel`, and `bet`
 
