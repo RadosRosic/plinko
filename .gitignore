@@ -1,0 +1,6 @@
+.env
+.vscode/
+node_modules/
+npm-debug.log*
+test/simulations/*
+!test/simulations/.gitkeep
