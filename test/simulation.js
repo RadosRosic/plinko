@@ -1,5 +1,6 @@
 import fs from "fs/promises"
 import {
+  PORT,
   MIN_ROWS,
   MAX_ROWS,
   MIN_DIFFICULTY,
@@ -65,7 +66,7 @@ async function runSimulation({
     const batchPromises = Array(currentBatch)
       .fill()
       .map(() =>
-        fetch("http://localhost:3000/play", {
+        fetch(`http://localhost:${PORT}/play`, {
           method: "POST",
           headers: {
             "Content-Type": "application/json",
